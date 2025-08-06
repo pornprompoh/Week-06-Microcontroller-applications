@@ -548,3 +548,132 @@ I (81052) LAB6_1: Build system test - Counter: 34
 I (83052) LAB6_1: Build system test - Counter: 35
 I (85052) LAB6_1: Build system test - Counter: 36
 ```
+
+### บันทึกผลการ simulate
+```
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+I (1471) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader
+I (1475) boot: compile time Aug  6 2025 02:44:23
+I (1476) boot: Multicore bootloader
+I (2115) boot: chip revision: v3.0
+I (2121) boot.esp32: SPI Speed      : 40MHz
+I (2122) boot.esp32: SPI Mode       : DIO
+I (2124) boot.esp32: SPI Flash Size : 2MB
+I (2229) boot: Enabling RNG early entropy source...
+I (2324) boot: Partition Table:
+I (2324) boot: ## Label            Usage          Type ST Offset   Length
+I (2326) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (2330) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (2332) boot:  2 factory          factory app      00 00 00010000 00100000
+I (2423) boot: End of partition table
+I (3045) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09534h ( 38196) map
+I (3375) esp_image: segment 1: paddr=0001955c vaddr=3ff80000 size=00024h (    36) load
+I (3732) esp_image: segment 2: paddr=00019588 vaddr=3ffb0000 size=025e0h (  9696) load
+I (4046) esp_image: segment 3: paddr=0001bb70 vaddr=40080000 size=044a8h ( 17576) load
+I (4365) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=0efb8h ( 61368) map
+I (4695) esp_image: segment 5: paddr=0002efe0 vaddr=400844a8 size=08b10h ( 35600) load
+I (6118) boot: Loaded app from partition at offset 0x10000
+I (6121) boot: Disabling RNG early entropy source...
+I (6285) cpu_start: Multicore app
+I (11940) cpu_start: Pro cpu start user code
+I (11942) cpu_start: cpu freq: 160000000 Hz
+I (11943) app_init: Application information:
+I (11944) app_init: Project name:     lab6_1_basic_build
+I (11944) app_init: App version:      1
+I (11944) app_init: Compile time:     Aug  6 2025 02:43:15
+I (11949) app_init: ELF file SHA256:  246f89df0...
+I (11949) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f
+I (11951) efuse_init: Min chip rev:     v0.0
+I (11952) efuse_init: Max chip rev:     v3.99
+I (11952) efuse_init: Chip rev:         v3.0
+I (11961) heap_init: Initializing. RAM available for dynamic allocation:
+I (11964) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (11965) heap_init: At 3FFB2EA8 len 0002D158 (180 KiB): DRAM
+I (11965) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (11966) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (11967) heap_init: At 4008CFB8 len 00013048 (76 KiB): IRAM
+I (12092) spi_flash: detected chip: winbond
+I (12107) spi_flash: flash io: dio
+I (12140) main_task: Started on CPU0
+I (12160) main_task: Calling app_main()
+I (12160) LAB1: === Build Information ===
+I (12160) LAB1: Project Name: lab6_1_basic_build
+I (12160) LAB1: ESP-IDF Version: v6.0-dev-1002-gbfe5caf58f
+I (12160) LAB1: Compile Date: Aug  6 2025
+I (12160) LAB1: Compile Time: 03:05:12
+I (12160) LAB1: Chip Model: esp32
+I (12160) LAB1: Free Heap: 304636 bytes
+I (12160) LAB1: Running... Counter: 0
+I (13170) LAB1: Running... Counter: 1
+I (14170) LAB1: Running... Counter: 2
+I (15170) LAB1: Running... Counter: 3
+I (16170) LAB1: Running... Counter: 4
+I (17170) LAB1: Running... Counter: 5
+I (18170) LAB1: Running... Counter: 6
+I (19170) LAB1: Running... Counter: 7
+I (20170) LAB1: Running... Counter: 8
+I (21170) LAB1: Running... Counter: 9
+I (21170) LAB1: Current free heap: 304636 bytes
+I (22170) LAB1: Running... Counter: 10
+I (23170) LAB1: Running... Counter: 11
+I (24170) LAB1: Running... Counter: 12
+I (25170) LAB1: Running... Counter: 13
+I (26170) LAB1: Running... Counter: 14
+I (27170) LAB1: Running... Counter: 15
+I (28170) LAB1: Running... Counter: 16
+I (29170) LAB1: Running... Counter: 17
+I (30170) LAB1: Running... Counter: 18
+I (31170) LAB1: Running... Counter: 19
+I (31170) LAB1: Current free heap: 304636 bytes
+I (32170) LAB1: Running... Counter: 20
+I (33170) LAB1: Running... Counter: 21
+I (34170) LAB1: Running... Counter: 22
+I (35170) LAB1: Running... Counter: 23
+I (36170) LAB1: Running... Counter: 24
+I (37170) LAB1: Running... Counter: 25
+I (38170) LAB1: Running... Counter: 26
+I (39170) LAB1: Running... Counter: 27
+I (40170) LAB1: Running... Counter: 28
+I (41170) LAB1: Running... Counter: 29
+I (41170) LAB1: Current free heap: 304636 bytes
+I (42170) LAB1: Running... Counter: 30
+I (43170) LAB1: Running... Counter: 31
+I (44170) LAB1: Running... Counter: 32
+I (45170) LAB1: Running... Counter: 33
+I (46170) LAB1: Running... Counter: 34
+I (47170) LAB1: Running... Counter: 35
+I (48170) LAB1: Running... Counter: 36
+I (49170) LAB1: Running... Counter: 37
+I (50170) LAB1: Running... Counter: 38
+I (51170) LAB1: Running... Counter: 39
+I (51170) LAB1: Current free heap: 304636 bytes
+I (52170) LAB1: Running... Counter: 40
+I (53170) LAB1: Running... Counter: 41
+I (54170) LAB1: Running... Counter: 42
+I (55170) LAB1: Running... Counter: 43
+I (56170) LAB1: Running... Counter: 44
+I (57170) LAB1: Running... Counter: 45
+I (58170) LAB1: Running... Counter: 46
+I (59170) LAB1: Running... Counter: 47
+I (60170) LAB1: Running... Counter: 48
+I (61170) LAB1: Running... Counter: 49
+I (61170) LAB1: Current free heap: 304636 bytes
+I (62170) LAB1: Running... Counter: 50
+I (63170) LAB1: Running... Counter: 51
+I (64170) LAB1: Running... Counter: 52
+I (65170) LAB1: Running... Counter: 53
+I (66170) LAB1: Running... Counter: 54
+I (67170) LAB1: Running... Counter: 55
+I (68170) LAB1: Running... Counter: 56
+I (69170) LAB1: Running... Counter: 57
+I (70170) LAB1: Running... Counter: 58
+I (71170) LAB1: Running... Counter: 59
+I (71170) LAB1: Current free heap: 304636 bytes
+```
