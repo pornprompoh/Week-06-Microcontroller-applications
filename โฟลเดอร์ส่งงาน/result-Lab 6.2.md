@@ -545,19 +545,22 @@ I (27605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
 ขั้นตอนที่ 1 (เฉพาะ sensor.c): <br>
 จำนวนไฟล์ source: 4 <br>
 ขนาด binary: 163041 bytes <br>
-การทำงาน: I (295) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18 <br>
-          I (305) SENSOR: 🌡️  Temp erature: 30.1°C <br>
-          I (365) SENSOR: 💧 Humidity: 98.2% <br>
+การทำงาน: 
+I (295) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18 <br>
+I (305) SENSOR: 🌡️  Temp erature: 30.1°C <br>
+I (365) SENSOR: 💧 Humidity: 98.2% <br>
 
 ขั้นตอนที่ 2 (เพิ่ม display.c): <br>
 จำนวนไฟล์ source: 6 <br>
 ขนาด binary: 163925 bytes <br>
-การทำงาน: I (16655) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15 <br>
-          I (16675) DISPLAY: 📺 Message: Status Check Complete <br>
+การทำงาน: 
+I (16655) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15 <br>
+I (16675) DISPLAY: 📺 Message: Status Check Complete <br>
 
 ขั้นตอนที่ 3 (เพิ่ม led.c): <br>
 จำนวนไฟล์ source: 8 <br>
 ขนาด binary: 164873 bytes <br>
-การทำงาน: I (24605) LED: ✅ LED ON from file: ./main/led.c, line: 20 <br>
-          I (24605) LED: 🟢 LED is now ON <br>
-          I (24605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38 <br>
+การทำงาน: 
+I (24605) LED: ✅ LED ON from file: ./main/led.c, line: 20 <br>
+I (24605) LED: 🟢 LED is now ON <br>
+I (24605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38 <br>
