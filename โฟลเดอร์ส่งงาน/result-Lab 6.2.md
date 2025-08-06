@@ -328,5 +328,185 @@ I (29056) DISPLAY: 📺 Message: Status Check Complete
 
 ### 
 ```
+ets Jul 29 2019 12:21:46
 
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+I (1732) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader
+I (1735) boot: compile time Aug  6 2025 03:23:10
+I (1736) boot: Multicore bootloader
+I (2659) boot: chip revision: v3.0
+I (2668) boot.esp32: SPI Speed      : 40MHz
+I (2669) boot.esp32: SPI Mode       : DIO
+I (2669) boot.esp32: SPI Flash Size : 2MB
+I (2767) boot: Enabling RNG early entropy source...
+I (2857) boot: Partition Table:
+I (2858) boot: ## Label            Usage          Type ST Offset   Length
+I (2859) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (2861) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (2863) boot:  2 factory          factory app      00 00 00010000 00100000
+I (2960) boot: End of partition table
+I (3627) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09a24h ( 39460) map
+I (4020) esp_image: segment 1: paddr=00019a4c vaddr=3ff80000 size=00024h (    36) load
+I (4345) esp_image: segment 2: paddr=00019a78 vaddr=3ffb0000 size=025e0h (  9696) load
+I (4680) esp_image: segment 3: paddr=0001c060 vaddr=40080000 size=03fb8h ( 16312) load
+I (5008) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=0f3e4h ( 62436) map
+I (5332) esp_image: segment 5: paddr=0002f40c vaddr=40083fb8 size=09048h ( 36936) load
+I (6425) boot: Loaded app from partition at offset 0x10000
+I (6426) boot: Disabling RNG early entropy source...
+I (6558) cpu_start: Multicore app
+I (12315) cpu_start: Pro cpu start user code
+I (12320) cpu_start: cpu freq: 160000000 Hz
+I (12322) app_init: Application information:
+I (12322) app_init: Project name:     lab6_2_multiple_files
+I (12323) app_init: App version:      1
+I (12323) app_init: Compile time:     Aug  6 2025 03:21:32
+I (12324) app_init: ELF file SHA256:  77400858b...
+I (12325) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f
+I (12326) efuse_init: Min chip rev:     v0.0
+I (12331) efuse_init: Max chip rev:     v3.99
+I (12334) efuse_init: Chip rev:         v3.0
+I (12341) heap_init: Initializing. RAM available for dynamic allocation:
+I (12344) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (12345) heap_init: At 3FFB2EB0 len 0002D150 (180 KiB): DRAM
+I (12345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (12346) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (12353) heap_init: At 4008D000 len 00013000 (76 KiB): IRAM
+I (12460) spi_flash: detected chip: winbond
+I (12484) spi_flash: flash io: dio
+I (12515) main_task: Started on CPU0
+I (12535) main_task: Calling app_main()
+I (12535) MAIN: 🚀 Lab 6.2: Multiple Source Files Demo
+I (12535) MAIN: 📍 Main function from file: ./main/lab6_2_multiple_files.c, line: 15
+I (12535) MAIN: ESP-IDF Version: v6.0-dev-1002-gbfe5caf58f
+I (12535) SENSOR: 🔧 Sensor initialized from file: ./main/sensor.c, line: 12
+I (12535) SENSOR: 📡 Sensor module ready for operation
+I (12545) DISPLAY: 🖥️  Display initialized from file: ./main/display.c, line: 9
+I (12545) DISPLAY: 💡 Display module ready
+I (12545) LED: 💡 LED initialized from file: ./main/led.c, line: 12
+I (12545) LED: 🔧 LED module ready
+I (12545) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (12545) DISPLAY: 📺 Message: System Starting...
+I (12555) LED: 🚀 Starting LED blink task from file: ./main/led.c, line: 59
+I (12555) LED: ✨ LED blink task started from file: ./main/led.c, line: 49
+I (12555) LED: ✅ LED ON from file: ./main/led.c, line: 20
+I (12555) LED: 🟢 LED is now ON
+I (12555) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
+I (12565) MAIN: === Loop 0 ===
+I (12565) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (12565) DISPLAY: ✨ Display ready for new content
+I (12565) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (12575) SENSOR: 🌡️  Temperature: 30.1°C
+I (12595) SENSOR: 💧 Humidity: 78.3%
+I (12595) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (12595) DISPLAY: 📈 Value 1: 26.50
+I (12595) DISPLAY: 📉 Value 2: 61.00
+I (12605) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (12605) DISPLAY: 📺 Message: LED Status: ON
+I (14615) MAIN: === Loop 1 ===
+I (14615) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (14615) DISPLAY: ✨ Display ready for new content
+I (14615) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (14615) SENSOR: 🌡️  Temperature: 27.4°C
+I (14615) SENSOR: 💧 Humidity: 70.5%
+I (14615) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (14615) DISPLAY: 📈 Value 1: 27.50
+I (14625) DISPLAY: 📉 Value 2: 62.00
+I (14625) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (14625) DISPLAY: 📺 Message: LED Status: ON
+I (15565) LED: ❌ LED OFF from file: ./main/led.c, line: 27
+I (15575) LED: 🔴 LED is now OFF
+I (15575) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
+I (16625) MAIN: === Loop 2 ===
+I (16625) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (16625) DISPLAY: ✨ Display ready for new content
+I (16635) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (16635) SENSOR: 🌡️  Temperature: 31.6°C
+I (16645) SENSOR: 💧 Humidity: 66.2%
+I (16655) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (16655) DISPLAY: 📈 Value 1: 28.50
+I (16655) DISPLAY: 📉 Value 2: 63.00
+I (16655) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (16655) DISPLAY: 📺 Message: LED Status: OFF
+I (16655) SENSOR: ✅ Sensor status check from file: ./main/sensor.c, line: 30
+I (16655) SENSOR: 📈 All sensors operating normally
+I (16655) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (16675) DISPLAY: 📺 Message: Status Check Complete
+I (18575) LED: ✅ LED ON from file: ./main/led.c, line: 20
+I (18575) LED: 🟢 LED is now ON
+I (18575) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
+I (18675) MAIN: === Loop 3 ===
+I (18675) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (18675) DISPLAY: ✨ Display ready for new content
+I (18675) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (18675) SENSOR: 🌡️  Temperature: 29.3°C
+I (18675) SENSOR: 💧 Humidity: 84.4%
+I (18675) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (18675) DISPLAY: 📈 Value 1: 29.50
+I (18685) DISPLAY: 📉 Value 2: 64.00
+I (18685) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (18685) DISPLAY: 📺 Message: LED Status: ON
+I (20685) MAIN: === Loop 4 ===
+I (20685) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (20685) DISPLAY: ✨ Display ready for new content
+I (20685) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (20685) SENSOR: 🌡️  Temperature: 30.7° C
+I (20695) SENSOR: 💧 Humidity: 96.6%
+I (20695) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (20695) DISPLAY: 📈 Value 1: 30.50
+I (20695) DISPLAY: 📉 Value 2: 65.00
+I (20695) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (20695) DISPLAY: 📺 Message: LED Status: ON
+I (21575) LED: ❌ LED OFF from file: ./main/led.c, line: 27
+I (21605) LED: 🔴 LED is now OFF
+I (21605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
+I (22695) MAIN: === Loop 5 ===
+I (22695) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (22695) DISPLAY: ✨ Display ready for new content
+I (22695) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (22695) SENSOR: 🌡️  Temperature: 26.3°C
+I (22695) SENSOR: 💧 Humidity: 91.5%
+I (22695) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (22695) DISPLAY: 📈 Value 1: 31.50
+I (22695) DISPLAY: 📉 Value 2: 66.00
+I (22695) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (22705) DISPLAY: 📺 Message: LED Status: OFF
+I (22705) SENSOR: ✅ Sensor status check from file: ./main/sensor.c, line: 30
+I (22705) SENSOR: 📈 All sensors operating normally
+I (22705) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (22705) DISPLAY: 📺 Message: Status Check Complete
+I (24605) LED: ✅ LED ON from file: ./main/led.c, line: 20
+I (24605) LED: 🟢 LED is now ON
+I (24605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
+I (24705) MAIN: === Loop 6 ===
+I (24705) DISPLAY: 🧹 Screen cleared from file: ./main/display.c, line: 28
+I (24705) DISPLAY: ✨ Display ready for new content
+I (24705) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (24705) SENSOR: 🌡️  Temperature: 26.7°C
+I (24705) SENSOR: 💧 Humidity: 65.1%
+I (24705) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (24705) DISPLAY: 📈 Value 1: 32.50
+I (24705) DISPLAY: 📉 Value 2: 67.00
+I (24705) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (24705) DISPLAY: 📺 Message: LED Status: ON
+I (26705) MAIN: === Loop 7 ===
+I (26705) DISPLAY: 🧹 Scr een cleared from file: ./main/display.c, line: 28
+I (26705) DISPLAY: ✨ Display ready for new content
+I (26705) SENSOR: 📊 Reading sensor data from file: ./main/sensor.c, line: 18
+I (26705) SENSOR: 🌡️  Temperature: 29.2°C
+I (26705) SENSOR: 💧 Humidity: 95.9%
+I (26705) DISPLAY: 📊 Data display from file: ./main/display.c, line: 21
+I (26705) DISPLAY: 📈 Value 1: 33.50
+I (26705) DISPLAY: 📉 Value 2: 68.00
+I (26705) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
+I (26705) DISPLAY: 📺 Message: LED Status: ON
+I (27605) LED: ❌ LED OFF from file: ./main/led.c, line: 27
+I (27605) LED: 🔴 LED is now OFF
+I (27605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38
 ```
