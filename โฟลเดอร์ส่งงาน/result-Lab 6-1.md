@@ -680,25 +680,30 @@ I (71170) LAB1: Current free heap: 304636 bytes
 ### คำถามทบทวน
 1. Docker vs Native Setup: อธิบายข้อดีของการใช้ Docker เปรียบเทียบกับการติดตั้ง ESP-IDF บน host system <br>
 ```
-
+Docker ดีกว่า Native Setup เพราะ ติดตั้งง่าย ไม่ต้องจัดการ dependencies เอง ใช้งานได้ทันที ควบคุมเวอร์ชัน ESP-IDF ได้แน่นอน ย้ายเครื่องสะดวก ใช้ร่วมกันในทีมได้แบบไม่เจอปัญหาสภาพแวดล้อมไม่ตรงกัน และเหมาะกับการใช้ในระบบอัตโนมัติ (CI/CD)
 ```
 2. Build Process: อธิบายขั้นตอนการ build ของ ESP-IDF ใน Docker container ตั้งแต่ source code จนได้ binary <br>
 ```
-
+1. เตรียม Source Code
+2. เรียกใช้งาน Docker Container
+3. เริ่มกระบวนการ Build
+4. ผลลัพธ์ที่ได้
+5. ได้ผลลัพธ์
 ```
 3. CMake Files: บทบาทของไฟล์ CMakeLists.txt แต่ละไฟล์คืออะไร และทำงานอย่างไรใน Docker environment? <br>
 ```
-
+CMakeLists.txt ในโฟลเดอร์โปรเจกต์หลัก หน้าที่ : เป็นจุดเริ่มต้นของการ build
+CMakeLists.txt ในโฟลเดอร์ main/ หน้าที่ : ลงทะเบียน component (ชุดของไฟล์ .c, .h)
 ```
 4. Git Ignore: ไฟล์ .gitignore มีความสำคัญอย่างไรสำหรับ ESP32 project development? <br>
 ```
-
+.gitignore ช่วยไม่ให้ไฟล์ชั่วคราว เช่น build/, .elf, .bin, และไฟล์เฉพาะเครื่องถูกเก็บใน Git ทำให้โปรเจกต์สะอาด ทำงานร่วมกันง่าย และลดปัญหาเวลาแชร์หรือทำงานเป็นทีม.
 ```
 5. Container Persistence: ข้อมูลใดบ้างที่จะหายไปเมื่อ restart container และข้อมูลใดที่จะอยู่ต่อ? <br>
 ```
-
+ข้อมูลจะหาย ถ้าอยู่ใน container โดยตรงและไม่มีการ mount หรือ container ถูกสร้างใหม่
 ```
 6. Development Workflow: เปรียบเทียบ workflow การพัฒนาระหว่างการใช้ Docker กับการทำงานบน native system <br>
 ```
-
+Docker เหมาะกับการเริ่มต้นรวดเร็ว ทำงานร่วมกันในทีม และระบบอัตโนมัติ ในขณะที่ Native System เหมาะกับงานที่ต้องการเข้าถึงระบบลึกและปรับแต่งเฉพาะเครื่องมากขึ้น
 ```
