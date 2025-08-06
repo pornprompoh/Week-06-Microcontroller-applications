@@ -323,7 +323,10 @@ I (29056) DISPLAY: 📢 Displaying from file: ./main/display.c, line: 15
 I (29056) DISPLAY: 📺 Message: Status Check Complete
 ```
 
-### ผลลัพธ์ 3
+### ผลลัพธ์ idf.py size
+<img width="652" height="365" alt="image" src="https://github.com/user-attachments/assets/89a087a2-4783-4e82-b62c-d1a7aeda1a47" />
+
+### 
 ```
 
 ```
