@@ -564,3 +564,6 @@ I (16675) DISPLAY: 📺 Message: Status Check Complete <br>
 I (24605) LED: ✅ LED ON from file: ./main/led.c, line: 20 <br>
 I (24605) LED: 🟢 LED is now ON <br>
 I (24605) LED: 🔄 LED toggled from file: ./main/led.c, line: 38 <br>
+
+### รูปภาพการทดลอง
+<img width="751" height="640" alt="image" src="https://github.com/user-attachments/assets/4a93804c-9025-404d-8a36-7fe03a61e5f1" />
